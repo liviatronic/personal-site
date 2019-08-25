@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/*Layout for grid*/
+.grid {
+    display: block;
+    column-count: 3;
+    width: 90%;
+    margin: auto;
+    padding: 6vw 0;
+    column-gap: 30px;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 36px;
+}
+
+
+/*Layout for project pages*/
+.project {
+    margin: 0 5%;
+    padding-top: 60px;
+    display: block;
+}
+
+.project:last-of-type {
+    padding-bottom: 6vw;
+}
+
+.description {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+.caption {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+.media {
+    width: calc(74% - 4vw);
+    display: inline-block;
+    padding-right: 4vw;
+}
+
+
+/*Text styles*/
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.15em;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    margin: 0 auto;
+    text-align: left;
+    color: #0300ff;
+    margin-top: 8px;
+}
+
+p::selection {
+    color: white;
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #0300ff;
+}
+
+a:hover {
+    color: #0300ff;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: .1s;
+    transition: 1s;
+}
+
+h1 {
+    font-size: 3.5vw;
+    line-height: 1.2;
+    margin: 40px 7% 10px 5%;
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    /* transform: rotate(90deg);
+    transform-origin: -8% 35% 0; */
+    margin: -27px 0 10px 0;
+    font-size: 15px;
+}
+
+
+em {
+    font-style: italic;
+}
+
+.title {
+    color: #000000;
+    border-bottom: 1px solid;
+    display: inline;
+}
+
+.blue {
+    color: #0300ff;
+}
+
+.black {
+    color: #000000;
+}
+
+.description p {
+    margin-top: 13px;
+    line-height: 1.35;
+}
+
+.caption p:first-of-type {
+    line-height: 1.35;
+    margin-top: -4px;
+}
+
+.caption p {
+    margin-top: 16px;
+}
+
+.secondary p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.secondary p:first-of-type {
+    margin-top: 40px;
+
+}
+
+
+/*Media*/
+.photothumb {
+    width: 100%;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.media img {
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.media img:last-of-type {
+    margin-bottom: auto;
+}
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.iframe-container:last-of-type {
+    margin-bottom: auto;
+}
+
+#vidaboveimg {
+    margin-bottom: 100px;
+}
+
+.item:hover .photothumb {
+    box-shadow: 1px 1px 12px 1px rgba(3, 0, 255, 0.4);
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.item:hover .title {
+    color: #0300ff;
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.sy-box {
+    width: calc(74% - 4vw);
+    display: inline-block;
+    padding-right: 4vw;
+}
+
+
+
+/*Responsive*/
+
+/*Large viewports*/
+@media only screen and (min-width : 1200px) {
+    .grid {
+        column-count: 4;
+    }
+}
+
+/*Smaller viewports*/
+@media only screen and (max-width : 1130px) {
+    .media {
+        width: calc(74% - 30px);
+        padding-right: 30px;
+    }
+
+    .sy-box {
+        width: calc(74% - 30px);
+        padding-right: 30px;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    .secondary p {
+        font-size: 13px;
+    }
+
+    .secondary p:first-of-type {
+        margin-top: 24px;
+    }
+
+    .media img {
+        margin-bottom: 3.5%;
+    }
+
+    .iframe-container {
+        margin-bottom: 3.5%;
+    }
+
+    #vidaboveimg {
+        margin-bottom: 3.5%;
+    }
+}
+
+/*Medium viewports*/
+@media only screen and (max-width : 900px) {
+    .grid {
+        column-count: 2;
+    }
+
+    .project {
+        padding: 40px 0 60px;
+    }
+
+    .media {
+        width: 100%;
+        padding-right: auto;
+    }
+
+    .sy-box {
+        width: 100%;
+        padding-right: auto;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 9vw 0;
+    }
+
+    .description {
+        width: 100%;
+        max-width: 500px;
+        margin: 30px 0;
+        position: inherit;
+        order: -1;
+    }
+
+    .caption {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 0 20px 0;
+        position: inherit;
+        order: -1;
+    }
+
+    .secondary p {
+        max-width: 300px;
+        display: block;
+        margin-left: 0px;
+    }
+
+    .grid {
+        padding: 60px 0;
+    }
+}
+
+/*Mobile large*/
+@media only screen and (max-width : 730px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .project:last-of-type {
+        padding-bottom: 60px;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width : 500px) {
+    .grid {
+        column-count: 1;
+    }
+}
