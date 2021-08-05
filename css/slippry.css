@@ -314,6 +314,7 @@ li.sy-next a {
 
 /* captions, styled fo the overlay variant */
 .sy-caption-wrap {
+  display: none;
   position: absolute;
   bottom: 2em;
   z-index: 12;

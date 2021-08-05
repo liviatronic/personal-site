@@ -7,7 +7,9 @@ jQuery(document).ready(function ($) {
     var maximum = arrayOfCursors.length;
 
     // Function to iterate through array
+    $(window).on('load', function (){
     $(".item").hover(function () {
+        console.log("hey");
         var anchor = $(this).find("a");
         var currentCursor = arrayOfCursors[count];
         var csserrr = 'url("' + currentCursor + '"), auto';
@@ -21,5 +23,17 @@ jQuery(document).ready(function ($) {
         }
 
     }, function () {});
+});
+
+    // get and place the grid
+    $('.grid-container').each(function() {
+        $(this).load("grid.html")
+    })
+
+    $('.grid-container-index').each(function() {
+        $(this).load("grid.html")
+    })
+
+
 
 });
